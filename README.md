@@ -1,2 +1,3 @@
 # Physics-Engine
-This is a build for a physics engine.
+
+This project aims to build a functioning physics engine in C++.
