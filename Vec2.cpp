@@ -18,7 +18,7 @@ double Vector::get(int pos) {
         return y;
     }
     else {
-        return NULL;
+        return 0.0;
         std::cout << "Invalid index in a Vector" << '\n';
     }
 }
