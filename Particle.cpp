@@ -5,7 +5,7 @@
 
 void Particle::update (double dt) {
     if (m > 0) {
-        F.upx(-m * g);
+        F.upy(-m * g);
     }
     
     double a_x = F.get(0) / m;
