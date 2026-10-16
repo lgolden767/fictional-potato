@@ -1,28 +1,23 @@
 #pragma once
 #include <iostream>
+#include "Vec2.h"
 #include <vector>
 
 class Particle {
-    double r_x;
-    double r_y;
-    double v_x;
-    double v_y;
+    Vector r{0.0, 0.0};
+    Vector v{0.0, 0.0};
     double m;
-    double F_x;
-    double F_y;
-    double time;
+    Vector F{0.0, 0.0};
+    double time = 0;
     double g = 9.81; //m s^-2
 
     public:
         Particle(double rxi, double ryi, double vxi, double vyi, double mi) {
-            r_x = rxi;
-            r_y = ryi;
-            v_x = vxi;
-            v_y = vyi;
+            r.upx(rxi);
+            r.upy(ryi);
+            v.upx(vxi);
+            v.upy(vyi);
             m = mi;
-            F_x = 0;
-            F_y = 0;
-            time = 0;
         }
 
         void update(double dt);

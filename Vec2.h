@@ -1,15 +1,17 @@
 #include <vector>
 
 class Vector {
-    double a;
-    double b;
-    std::vector<double> vec{a, b};
+    double x;
+    double y;
 
     public:
         Vector(double A, double B) {
-            a = A;
-            b = B;
+            x = A;
+            y = B;
         }
+
+        void upx(double inc);
+        void upy(double inc);
 
         std::vector<double> add(
             Vector A, Vector C
