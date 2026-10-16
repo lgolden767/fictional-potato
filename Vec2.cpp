@@ -1,4 +1,5 @@
 #include "Vec2.h"
+#include <iostream>
 #include <vector>
 #include <cmath>
 
@@ -7,6 +8,19 @@ void Vector::upx(double inc) {
 }
 void Vector::upy(double inc) {
     y = inc;
+}
+
+double Vector::get(int pos) {
+    if (pos == 0) {
+        return x;
+    }
+    else if (pos == 1) {
+        return y;
+    }
+    else {
+        return NULL;
+        std::cout << "Invalid index in a Vector" << '\n';
+    }
 }
 
 std::vector<double> Vector::add(

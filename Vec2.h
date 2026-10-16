@@ -13,6 +13,8 @@ class Vector {
         void upx(double inc);
         void upy(double inc);
 
+        double get(int pos);
+
         std::vector<double> add(
             Vector A, Vector C
         );
