@@ -15,6 +15,7 @@ class Vector {
         void upy(double inc);
 
         double get(int pos);
+        double getdoub(std::string param);
 
         std::vector<double> add(
             Vector A, Vector C

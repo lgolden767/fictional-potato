@@ -2,10 +2,13 @@
 #include <vector>
 #include <iostream>
 
+double g = 9.81; //m s^-2
+
 int main() {
     Particle obj1(0.0, 10.0, 2.0, 0.0, 10.0);
-    
+     
     for (int i = 0; i < 10; ++i) {
+        obj1.force(obj1.get("m") * g, -M_PI);
         obj1.update(0.1);
     }
     

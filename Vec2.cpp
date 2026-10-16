@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <string>
 
 void Vector::upx(double inc) {
     x = inc;
